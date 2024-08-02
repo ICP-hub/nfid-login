@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "nfid-login-backend": {
+      "main": "src/nfid-login-backend/main.mo",
+      "type": "motoko"
+    },
+    "nfid-login-frontend": {
+      "dependencies": [
+        "nfid-login-backend"
+      ],
+      "source": [
+        "src/nfid-login-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nfid-login-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
