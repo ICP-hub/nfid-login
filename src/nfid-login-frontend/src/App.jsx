@@ -28,6 +28,9 @@ const App = () => {
 
 
   const handleNFIDCall = async () => {
+    //current time NFID call the mainnet canister if your backend on mainnet then use the env file if you are on local then use my canister id backend which is deployed over mainnet
+
+    
     // const canisterArray = ["fnrir-yiaaa-aaaak-qirwa-cai"];
     const canisterArray = [process.env.CANISTER_ID_NFID_LOGIN_BACKEND];
     
